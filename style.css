@@ -9,3 +9,29 @@ form{
     margin: auto;
 }
 
+#container-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+    gap: 16px; /* Espaçamento entre as colunas e linhas */
+    padding: 16px; /* Espaçamento interno do contêiner */ 
+    margin-top: 30px;
+}
+
+
+.tarefa {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30vw;
+    height: auto;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);    
+}
+
+
+.tarefa p {
+    margin: auto;
+    font-size: 18px;
+    padding: 10px;    
+}
+
