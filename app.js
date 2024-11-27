@@ -47,6 +47,11 @@ function editarTarefa(tarefaDiv) {
         // Substituir o span pelo input
         spanTexto.replaceWith(input);
         botaoEditar.textContent = "Salvar";
+
+        // Alterar a cor do botão para indicar edição
+        botaoEditar.style.backgroundColor = "green";
+        botaoEditar.style.color = "white";
+        
     } else {
         // Salvar as alterações
         const novoTexto = tarefaDiv.querySelector("input").value;
@@ -58,5 +63,9 @@ function editarTarefa(tarefaDiv) {
         // Substituir o input pelo span
         tarefaDiv.querySelector("input").replaceWith(novoSpan);
         botaoEditar.textContent = "Editar";
+
+        // Reverter a cor do botão para o estado normal
+        botaoEditar.style.backgroundColor = "";
+        botaoEditar.style.color = "";
     }
 }
